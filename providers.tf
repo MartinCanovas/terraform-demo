@@ -17,8 +17,8 @@ terraform {
 provider "mongodbatlas" {}
 
 provider "aws" {
-  region  = "us-east-2"
-  profile = "default"
+  region     = "us-east-2"
+  profile    = "default"
   access_key = var.aws-access-key-id
   secret_key = var.aws-secret-access-key
 }

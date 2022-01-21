@@ -30,3 +30,13 @@ variable "aws-access-key-id" {
 variable "aws-secret-access-key" {
   default = ""
 }
+
+terraform {
+  backend "remote" {
+    organization = "Martin_Org"
+
+    workspaces {
+      name = "tf-support"
+    }
+  }
+}

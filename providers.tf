@@ -23,14 +23,6 @@ provider "aws" {
   secret_key = var.aws-secret-access-key
 }
 
-variable "aws-access-key-id" {
-  default = ""
-}
-
-variable "aws-secret-access-key" {
-  default = ""
-}
-
 terraform {
   backend "remote" {
     organization = "Martin_Org"

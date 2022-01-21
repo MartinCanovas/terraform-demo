@@ -115,3 +115,19 @@ variable "aws_subnet_id" {
 variable "aws_sg_id" {
   default = ["sg-04c0723872034ea9e"]
 }
+
+variable "aws-access-key-id" {
+  default = ""
+}
+
+variable "aws-secret-access-key" {
+  default = ""
+}
+
+variable "MONGODB_ATLAS_PUBLIC_KEY" {
+  default = ""
+}
+
+variable "MONGODB_ATLAS_PRIVATE_KEY" {
+  default = ""
+}

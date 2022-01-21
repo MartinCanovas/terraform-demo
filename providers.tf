@@ -22,3 +22,11 @@ provider "aws" {
   access_key = var.aws-access-key-id
   secret_key = var.aws-secret-access-key
 }
+
+variable "aws-access-key-id" {
+  default = ""
+}
+
+variable "aws-secret-access-key" {
+  default = ""
+}

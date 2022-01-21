@@ -31,8 +31,8 @@ jobs:
 
     - name: Setup Atlas API
       run: |
-        export MONGODB_ATLAS_PUBLIC_KEY=${{ secrets.AWS_ACCESS_KEY_ID }}
-        export MONGODB_ATLAS_PRIVATE_KEY=${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        export MONGODB_ATLAS_PUBLIC_KEY=${{ secrets.MONGODB_ATLAS_PUBLIC_KEY }}
+        export MONGODB_ATLAS_PRIVATE_KEY=${{ secrets.MONGODB_ATLAS_PRIVATE_KEY }}
 
     # https://github.com/actions/setup-node
     - name: Setup node.js

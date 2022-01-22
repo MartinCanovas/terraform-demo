@@ -63,7 +63,7 @@ resource "mongodbatlas_cloud_provider_access_authorization" "tf-support" {
   project_id = "61eaad196657c41768aaba47"
   role_id    = mongodbatlas_cloud_provider_access_setup.tf-support.role_id
 
-  aws = {
+  aws {
     iam_assumed_role_arn = aws_iam_role.tf-support.arn
   }
 }

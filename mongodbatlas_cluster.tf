@@ -12,7 +12,7 @@ resource "mongodbatlas_cluster" "tf-support" {
 
   //Provider Settings "block"
   provider_name = "AWS"
-  disk_size_gb  = 128
+  disk_size_gb  = 100
   #provider_disk_iops          = 300
   provider_volume_type        = "STANDARD"
   provider_instance_size_name = var.provider_instance_size_name

@@ -1,7 +1,7 @@
 resource "mongodbatlas_project" "tf-support" {
   name   = "Terraform Support"
   org_id = "5a7a34b33b34b94c8461c286"
-  project_owner_id = "5d94bce8ff7a254933a5f80d"
+  #project_owner_id = "5d94bce8ff7a254933a5f80d"
 }
 
 # Create an IP Whitelist
@@ -63,7 +63,7 @@ resource "mongodbatlas_cloud_provider_access_authorization" "tf-support" {
   project_id = "61eaad196657c41768aaba47"
   role_id    = mongodbatlas_cloud_provider_access_setup.tf-support.role_id
 
-  aws {
+  aws = {
     iam_assumed_role_arn = aws_iam_role.tf-support.arn
   }
 }

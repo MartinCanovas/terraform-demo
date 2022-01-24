@@ -1,7 +1,7 @@
 resource "mongodbatlas_project" "tf-support" {
   name   = "Terraform Support"
   org_id = "5a7a34b33b34b94c8461c286"
-  #  project_owner_id = "5d94bce8ff7a254933a5f80d"
+  project_owner_id = "5d94bce8ff7a254933a5f80d"
 }
 
 # Create an IP Whitelist

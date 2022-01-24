@@ -41,16 +41,20 @@ resource "aws_iam_role" "tf-support" {
   # Terraform's "jsonencode" function converts a
   # Terraform expression result to valid JSON syntax.
   assume_role_policy = jsonencode({
-    Version = "2012-10-17"
-    Statement = [
+    "Version" : "2012-10-17",
+    "Statement" : [
       {
-        Action = "sts:AssumeRole"
-        Effect = "Allow"
-        Sid    = ""
-        Principal = {
-          Service = "ec2.amazonaws.com"
+        "Effect" : "Allow",
+        "Principal" : {
+          "AWS" : "arn:aws:iam::536727724300:root"
+        },
+        "Action" : "sts:AssumeRole",
+        "Condition" : {
+          "StringEquals" : {
+            "sts:ExternalId" : "ae09a195-3777-4c17-9d3e-e9ee91b33c09"
+          }
         }
-      },
+      }
     ]
   })
 
@@ -63,7 +67,7 @@ resource "mongodbatlas_cloud_provider_access_authorization" "tf-support" {
   project_id = "61eaad196657c41768aaba47"
   role_id    = mongodbatlas_cloud_provider_access_setup.tf-support.role_id
 
-  aws = {
+  aws {
     iam_assumed_role_arn = aws_iam_role.tf-support.arn
   }
 }

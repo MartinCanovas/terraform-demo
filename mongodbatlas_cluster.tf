@@ -1,5 +1,5 @@
 resource "mongodbatlas_advanced_cluster" "demo" {
-  project_id   = mongodbatlas_project.martin.id
+  project_id   = mongodbatlas_project.demo.id
   name         = var.cluster_name
   cluster_type = "REPLICASET"
 

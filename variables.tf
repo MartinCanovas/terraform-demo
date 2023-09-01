@@ -19,20 +19,12 @@ variable "atlas_ip_access_list_cidr" {
   type        = list(map(string))
   default = [
     {
+      cidr    = "204.153.194.100/32"
+      comment = "Palo Alto VPN"
+    },
+    {
       cidr    = "207.251.78.32/29"
-      comment = "New York Authenticated/Employee / Stealth live 6/28/19"
-    },
-    {
-      cidr    = "74.113.166.152/29"
-      comment = "New York / GigStream live 6/28/19"
-    },
-    {
-      cidr    = "77.107.233.160/29"
-      comment = "Dublin VPN"
-    },
-    {
-      cidr    = "186.137.0.0/16"
-      comment = "Home Network"
+      comment = "New York VPN"
     }
   ]
 }

@@ -1,5 +1,5 @@
 resource "mongodbatlas_advanced_cluster" "demo" {
-  project_id   = mongodbatlas_project.demo.id
+  project_id   = var.project_id
   name         = var.cluster_name
   cluster_type = "REPLICASET"
 
@@ -7,6 +7,7 @@ resource "mongodbatlas_advanced_cluster" "demo" {
     region_configs {
       electable_specs {
         instance_size = var.instance_size
+        node_count    = 3
       }
       provider_name         = "AWS"
       region_name           = "US_EAST_2"

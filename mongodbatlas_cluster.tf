@@ -6,7 +6,7 @@ resource "mongodbatlas_advanced_cluster" "demo" {
   replication_specs {
     region_configs {
       electable_specs {
-        instance_size = "M10"
+        instance_size = var.instance_size
       }
       provider_name         = "AWS"
       region_name           = "US_EAST_2"

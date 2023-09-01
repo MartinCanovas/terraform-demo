@@ -7,7 +7,7 @@ variable "project_id" {
 }
 
 variable "cluster_name" {
-  default = "tf-support"
+  default = "demo"
 }
 
 variable "email_address" {
@@ -33,25 +33,6 @@ variable "atlas_ip_access_list_cidr" {
     {
       cidr    = "186.137.0.0/16"
       comment = "Home Network"
-    }
-  ]
-}
-
-variable "atlas_ip_access_list_sg" {
-  description = "List of SG for Atlas Access List"
-  type        = list(map(string))
-  default = [
-    {
-      sg      = "sg-04c0723872034ea9e"
-      comment = "SG replicaset42"
-    },
-    {
-      sg      = "sg-05df5db0e8233916f"
-      comment = "SG omserver"
-    },
-    {
-      sg      = "sg-056eba412ff385eb6"
-      comment = "SG DB-Client"
     }
   ]
 }
@@ -91,10 +72,10 @@ variable "replication_factor" {
 
 variable "mongo_db_major_version" {
   description = "MongoDB version"
-  default     = "4.4"
+  default     = "6.0"
 }
 
-variable "provider_instance_size_name" {
+variable "instance_size" {
   description = "Instance type"
   default     = "M10"
 }
@@ -102,26 +83,6 @@ variable "provider_instance_size_name" {
 variable "provider_region_name" {
   description = "Provider region"
   default     = "US_EAST_2"
-}
-
-variable "aws_vpc_id" {
-  default = "vpc-02eeeb89477451b29"
-}
-
-variable "aws_subnet_id" {
-  default = ["subnet-01c8527ece0c6afdb", "subnet-0c10242c0731c21ad"]
-}
-
-variable "aws_sg_id" {
-  default = ["sg-04c0723872034ea9e"]
-}
-
-variable "aws-access-key-id" {
-  default = ""
-}
-
-variable "aws-secret-access-key" {
-  default = ""
 }
 
 variable "MONGODB_ATLAS_PUBLIC_KEY" {

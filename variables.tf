@@ -13,5 +13,5 @@ variable "mongo_db_major_version" {
 
 variable "instance_size" {
   description = "Instance type"
-  default     = "M10"
+  default     = "M20"
 }

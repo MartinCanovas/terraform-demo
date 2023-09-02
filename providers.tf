@@ -8,3 +8,13 @@ terraform {
 }
 
 provider "mongodbatlas" {}
+
+terraform {
+  backend "remote" {
+    organization = "Martin_Org"
+
+    workspaces {
+      name = "terraform-demo"
+    }
+  }
+}

@@ -8,12 +8,12 @@ variable "cluster_name" {
 
 variable "mongo_db_major_version" {
   description = "MongoDB version"
-  default     = "5.0"
+  default     = "6.0"
 }
 
 variable "instance_size" {
   description = "Instance type"
-  default     = "M10"
+  default     = "M30"
 }
 
 variable "MONGODB_ATLAS_PUBLIC_KEY" {}

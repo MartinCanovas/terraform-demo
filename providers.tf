@@ -8,8 +8,8 @@ terraform {
 }
 
 provider "mongodbatlas" {
-  MONGODB_ATLAS_PUBLIC_KEY=""
-  MONGODB_ATLAS_PRIVATE_KEY=""
+   MONGODB_ATLAS_PUBLIC_KEY=""
+   MONGODB_ATLAS_PRIVATE_KEY=""
 }
 
 terraform {

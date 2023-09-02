@@ -13,7 +13,7 @@ variable "mongo_db_major_version" {
 
 variable "instance_size" {
   description = "Instance type"
-  default     = "M50"
+  default     = "M20"
 }
 
 variable "MONGODB_ATLAS_PUBLIC_KEY" {}

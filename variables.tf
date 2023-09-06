@@ -3,7 +3,7 @@ variable "project_id" {
 }
 
 variable "cluster_name" {
-  default = "demo"
+  default = "cluster0"
 }
 
 variable "mongo_db_major_version" {
@@ -13,7 +13,7 @@ variable "mongo_db_major_version" {
 
 variable "instance_size" {
   description = "Instance type"
-  default     = "M20"
+  default     = "M10"
 }
 
 variable "MONGODB_ATLAS_PUBLIC_KEY" {}

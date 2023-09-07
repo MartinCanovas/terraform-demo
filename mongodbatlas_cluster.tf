@@ -10,7 +10,7 @@ resource "mongodbatlas_advanced_cluster" "demo" {
         node_count    = 3
       }
       provider_name         = "AWS"
-      region_name           = "US_EAST_2"
+      region_name           = "US_EAST_1"
       priority              = 7
     }
   }

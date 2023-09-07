@@ -3,7 +3,7 @@ variable "project_id" {
 }
 
 variable "cluster_name" {
-  default = "cluster0"
+  default = "demo"
 }
 
 variable "mongo_db_major_version" {

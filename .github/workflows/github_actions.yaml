@@ -1,0 +1,33 @@
+name: Terraform Plan
+
+on:
+  push:
+    branches:
+      - master
+
+env:
+  TF_CLOUD_ORGANIZATION: "Martin_Org"
+  TF_API_TOKEN: "${{ secrets.TF_API_TOKEN }}"
+  TF_WORKSPACE: "terraform-demo"
+  CONFIG_DIRECTORY: "./"
+
+jobs:
+  terraform:
+    if: github.repository != 'hashicorp-education/terraform-demo'
+    name: "Terraform Plan"
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+
+  steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+
+    - name: Terraform fmt
+      id: fmt
+      run: terraform fmt -check
+      continue-on-error: true
+
+    - name: Terraform Validate
+      id: validate
+      run: terraform validate -no-color

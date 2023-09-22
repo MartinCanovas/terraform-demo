@@ -18,12 +18,12 @@ variable "instance_size" {
 
 variable "dbuser" {
   description = "Database User Demo"
-  default     = "demo-user"
+  default     = "demo"
 }
 
 variable "dbuser_pwd" {
   description = "Database User Demo Password"
-  default     = "demo-user"
+  default     = "demo"
 }
 
 variable "MONGODB_ATLAS_PUBLIC_KEY" {}

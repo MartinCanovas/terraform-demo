@@ -13,7 +13,7 @@ variable "mongo_db_major_version" {
 
 variable "instance_size" {
   description = "Instance type"
-  default     = "M01"
+  default     = "M10"
 }
 
 variable "dbuser" {

@@ -27,7 +27,7 @@ resource "mongodbatlas_database_user" "terraform" {
   auth_database_name = "admin"
 
   roles {
-    role_name     = "root"
+    role_name     = "readWriteAnyDatabase"
     database_name = "admin"
   }
 }

@@ -16,14 +16,9 @@ variable "instance_size" {
   default     = "M10"
 }
 
-variable "dbuser" {
-  description = "Database User Demo"
-  default     = "demo"
-}
-
 variable "dbuser_pwd" {
-  description = "Database User Demo Password"
-  default     = "demo"
+  description = "Database User Password"
+  default     = "Password1!"
 }
 
 variable "MONGODB_ATLAS_PUBLIC_KEY" {}

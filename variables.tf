@@ -8,7 +8,7 @@ variable "cluster_name" {
 
 variable "mongo_db_major_version" {
   description = "MongoDB version"
-  default     = "6.0"
+  default     = "7.0"
 }
 
 variable "instance_size" {

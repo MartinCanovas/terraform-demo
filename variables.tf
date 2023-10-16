@@ -21,5 +21,10 @@ variable "dbuser_pwd" {
   default     = "Password1!"
 }
 
+variable "email_address" {
+  description = "Demo Alert"
+  default     = "martin.canovas@mongodb.com"
+}
+
 variable "MONGODB_ATLAS_PUBLIC_KEY" {}
 variable "MONGODB_ATLAS_PRIVATE_KEY" {}

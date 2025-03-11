@@ -5,7 +5,7 @@ resource "mongodbatlas_database_user" "demo" {
   auth_database_name = "admin"
 
   roles {
-    role_name     = "readWrite"
+    role_name     = "read"
     database_name = "admin"
   }
 }

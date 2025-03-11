@@ -1,7 +1,7 @@
 resource "mongodbatlas_database_user" "demo" {
   username           = var.dbuser
   password           = var.dbuser_pwd
-  project_id         = "622b7a8372fc9a0c13947267"
+  project_id         = "658f2550924000784dc51119"
   auth_database_name = "admin"
 
   roles {

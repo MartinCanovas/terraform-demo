@@ -9,3 +9,4 @@ variable "email_address" {
 
 variable "MONGODB_ATLAS_PUBLIC_KEY" {}
 variable "MONGODB_ATLAS_PRIVATE_KEY" {}
+variable "TF_LOG" {}

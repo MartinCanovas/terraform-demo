@@ -1,4 +1,4 @@
-resource "mongodbatlas_alert_configuration" "demo" {
+resource "mongodbatlas_alert_configuration" "alert1" {
   project_id = "658f2550924000784dc51119"
   event_type = "DAILY_BILL_OVER_THRESHOLD"
   enabled    = true
@@ -18,7 +18,7 @@ resource "mongodbatlas_alert_configuration" "demo" {
 
 }
 
-resource "mongodbatlas_alert_configuration" "demo" {
+resource "mongodbatlas_alert_configuration" "alert2" {
   project_id = "658f2550924000784dc51119"
   event_type = "PENDING_INVOICE_OVER_THRESHOLD"
   enabled    = true

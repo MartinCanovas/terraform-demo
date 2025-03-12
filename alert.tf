@@ -1,5 +1,5 @@
 resource "mongodbatlas_alert_configuration" "demo" {
-  project_id = var.project_id
+  project_id = "658f2550924000784dc51119"
   event_type = "DAILY_BILL_OVER_THRESHOLD"
   enabled    = true
   threshold_config {

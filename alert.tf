@@ -13,7 +13,7 @@ resource "mongodbatlas_alert_configuration" "demo" {
     interval_min  = 60
     delay_min     = 5
     sms_enabled   = false
-    email_address = var.email_address
+    email_address = "demo@mongodb.com"
   }
 
 }

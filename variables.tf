@@ -1,29 +1,10 @@
 variable "project_id" {
-  default = "622b7a8372fc9a0c13947267"
-}
-
-variable "cluster_name" {
-  default = "demo"
-}
-
-variable "mongo_db_major_version" {
-  description = "MongoDB version"
-  default     = "7.0"
-}
-
-variable "instance_size" {
-  description = "Instance type"
-  default     = "M10"
-}
-
-variable "dbuser_pwd" {
-  description = "Database User Password"
-  default     = "Password1!"
+  default = "658f2550924000784dc51119"
 }
 
 variable "email_address" {
   description = "Demo Alert"
-  default     = "martin.canovas@mongodb.com"
+  default     = "demo@mongodb.com"
 }
 
 variable "MONGODB_ATLAS_PUBLIC_KEY" {}

@@ -18,6 +18,7 @@ resource "mongodbatlas_alert_configuration" "alert1" {
 
 }
 
+/**
 resource "mongodbatlas_alert_configuration" "alert2" {
   project_id = var.project_id
   event_type = "PENDING_INVOICE_OVER_THRESHOLD"
@@ -37,3 +38,4 @@ resource "mongodbatlas_alert_configuration" "alert2" {
   }
 
 }
+**/

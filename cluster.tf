@@ -10,7 +10,7 @@ resource "mongodbatlas_advanced_cluster" "demo" {
       }
       provider_name         = "TENANT"
       backing_provider_name = "AWS"
-      region_name           = "US_WEST_1"
+      region_name           = "US_EAST_1"
       priority              = 7
     }
   }

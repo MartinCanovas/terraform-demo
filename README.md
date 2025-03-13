@@ -1,11 +1,11 @@
 # Overview
 
-Terraform script that creates a MongoDB cluster in Atlas (MongoDB Cloud).
+Terraform resources for the demo of Debugging Terraform Cloud with CI/CD Pipeline.
 <br/><br/>
 
 # Requirements
 
-- [Terraform](https://www.terraform.io/downloads.html) 0.12+
+- [Terraform](https://www.terraform.io/downloads.html) 1.10+
 - An MongoDB Atlas account
 - Environment variables:
 ```
@@ -15,29 +15,7 @@ Terraform script that creates a MongoDB cluster in Atlas (MongoDB Cloud).
 
 Documentation to create an Atlas API keys: https://docs.atlas.mongodb.com/configure-api-access/#programmatic-api-keys
 
-<br/><br/>
-# Usage
 
-Add the `org_id` value in variables.tf file with your Organization ID.
-
-Change other variables value such as instance type, MongoDB version, and whitelist IP to your needs.
-
-Create an execution plan:
-```
-$ terraform plan
-```
-
-Execute Terraform plan:
-```
-$ terraform apply
-```
-
-Destroy the Terraform-managed infrastructure:
-```
-$ terraform destroy
-```
-
-<br/><br/>
 # License 
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0) 

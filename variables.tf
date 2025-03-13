@@ -7,11 +7,7 @@ variable "email_address" {
   default     = "demo@mongodb.com"
 }
 
-variable "db_password" {
-  description = "dbuser password"
-  type        = string
-  sensitive   = true
-}
+variable "db_password" {}
 
 variable "MONGODB_ATLAS_PUBLIC_KEY" {}
 variable "MONGODB_ATLAS_PRIVATE_KEY" {}

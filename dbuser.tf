@@ -18,4 +18,8 @@ resource "mongodbatlas_database_user" "dbuser1" {
     name   = "dev"
     type = "CLUSTER"
   }
+  scopes {
+    name   = "demo"
+    type = "CLUSTER"
+  }
 }
